@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
+<h1>Hello World1</h1>
 <p>I'm hosted with GitHub Pages.</p>
+
+<div id="content">
+ should go here...
+ </div>
+ 
+ <script>
+window.addEventListener('message', handleMessage, false);
+    function handleMessage(event) { 
+       console.log(event.data)
+	   document.getElementById("content").innerHTML = event.data;
+    }
+</script>
 </body>
 </html>
