@@ -9,8 +9,8 @@
  </div>
  
  <script>
-window.addEventListener('message', handleMessage, false);
-    function handleMessage(event) { 
+     window.addEventListener('message', handleMessage, false);
+     function handleMessage(event) { 
        console.log(event)
 	   document.getElementById("content").innerHTML = event.data;
     }
